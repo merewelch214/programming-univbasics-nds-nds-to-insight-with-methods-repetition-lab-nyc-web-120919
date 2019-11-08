@@ -41,8 +41,10 @@ def total_gross(source)
   dir_total = 0
   
   while index < list_of_directors(source).length do
+    curr_dir = list_of_directors(source)[index]
+    puts curr_dir
     dir_total = directors_totals(list_of_directors(source)[index])
-    
+    puts 
     total += dir_total
     index += 1
   end
